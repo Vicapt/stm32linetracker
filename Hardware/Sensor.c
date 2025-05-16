@@ -22,7 +22,7 @@ uint16_t Sensor_Get(void)
 	Sensor_State[2] = !GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_12);
 	Sensor_State[3] = !GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_13);
 	Sensor_State[4] = !GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_14);
-	Sensor_State_code = Sensor_State[0]*10000 + Sensor_State[1]*1000 + Sensor_State[2]*100 + Sensor_State[3]*10 + Sensor_State[4]*1;
+	Sensor_State_code = Sensor_State[0]*16 + Sensor_State[1]*8 + Sensor_State[2]*4 + Sensor_State[3]*2 + Sensor_State[4]*1;
 	return Sensor_State_code;
 }
 

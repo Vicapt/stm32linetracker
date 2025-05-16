@@ -33,3 +33,4 @@
 .\objects\main.o: .\Hardware\Motor.h
 .\objects\main.o: .\Hardware\Sensor.h
 .\objects\main.o: .\System\Timer.h
+.\objects\main.o: .\Hardware\Buzzer.h

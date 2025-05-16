@@ -33,6 +33,7 @@
 ".\objects\motor.o"
 ".\objects\pwm.o"
 ".\objects\sensor.o"
+".\objects\buzzer.o"
 --strict --scatter ".\Objects\tester.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
